@@ -189,8 +189,9 @@ app.get('/github-auth-callback', async (req, res) => {
     return res.status(400).send('Invalid state parameter');  
   }
 
-  const decodedState = JSON.parse(decodeURIComponent(state));
-  console.log(`state in github-auth-callback: ${JSON.stringify(decodedState, null, 2)}`)
+//   const decodedState = JSON.parse(decodeURIComponent(state));
+  console.log(`state in github-auth-callback: ${state}`)
+// console.log(state)
 
 
   try {  
