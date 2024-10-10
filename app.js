@@ -141,7 +141,7 @@ const app = express();
 
 const CLIENT_ID = process.env.CLIENT_ID; // Replace with your GitHub App's client ID  
 const CLIENT_SECRET = process.env.CLIENT_SECRET; // Replace with your GitHub App's client secret  
-const REDIRECT_URI = 'https://your-app.com/callback'; // Replace with your app's callback URL  
+const REDIRECT_URI = 'https://pushalert.onrender.com/callback'; // Replace with your app's callback URL  
 
 
 
@@ -165,7 +165,7 @@ app.get('/setup', (req, res) => {
   const authorizationUrl = 'https://github.com/login/oauth/authorize';  
   const params = {  
     client_id: CLIENT_ID,  
-    // redirect_uri: REDIRECT_URI,  
+    redirect_uri: REDIRECT_URI,  
     state: state,  
     // Additional parameters can be added here, e.g., login, allow_signup, prompt  
   };  
