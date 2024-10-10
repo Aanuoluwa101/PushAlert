@@ -141,7 +141,7 @@ const app = express();
 
 const CLIENT_ID = process.env.CLIENT_ID; // Replace with your GitHub App's client ID  
 const CLIENT_SECRET = process.env.CLIENT_SECRET; // Replace with your GitHub App's client secret  
-const REDIRECT_URI = 'https://pushalert.onrender.com/callback'; // Replace with your app's callback URL  
+const REDIRECT_URI = 'https://pushalert.onrender.com/github-auth-callback'; // Replace with your app's callback URL  
 
 
 
